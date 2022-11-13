@@ -1,0 +1,104 @@
+{
+  "name": "kasproTV/forms",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/autocode/createcommand.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/events/discord/modal/submitted-first-page.js": {
+      "name": "discord.modal.submit.interaction",
+      "subtype": {
+        "custom_id": "first-page"
+      }
+    },
+    "functions/events/discord/message/button/Edit/edit-firstpage.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "edit-firstpage"
+      }
+    },
+    "functions/events/discord/message/button/Send/send-firstpage.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "send-firstpage"
+      }
+    },
+    "functions/events/discord/message/button/Send/send-secondpage.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "send-secondpage"
+      }
+    },
+    "functions/events/discord/modal/submitted-second-page.js": {
+      "name": "discord.modal.submit.interaction",
+      "subtype": {
+        "custom_id": "second-page"
+      }
+    },
+    "functions/events/discord/message/button/Edit/edit-secondpage.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "edit-secondpage"
+      }
+    },
+    "functions/events/discord/message/button/End/end.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "end"
+      }
+    },
+    "functions/events/discord/message/button/End/send-to-staff.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "send-to-staff"
+      }
+    },
+    "functions/events/discord/message/button/Send/inactive_send-thirdpage.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "send-thirdpage"
+      }
+    },
+    "functions/events/discord/modal/inactive_submitted-third-page.js": {
+      "name": "discord.modal.submit.interaction",
+      "subtype": {
+        "custom_id": "third-page"
+      }
+    },
+    "functions/events/discord/message/button/Edit/inactive_edit-thirdpage.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "edit-secondpage"
+      }
+    },
+    "functions/events/discord/message/button/Answer/accept.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "accept"
+      }
+    },
+    "functions/events/discord/message/button/Answer/reject.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "reject"
+      }
+    },
+    "functions/events/discord/command/gamescard.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "gamescard"
+      }
+    }
+  },
+  "env": [
+    {
+      "name": "STAFF_CHANNEL_ID",
+      "description": "Staff Channel ID"
+    },
+    {
+      "name": "STAFF_ROLE_ID",
+      "description": "Staff Role ID"
+    }
+  ]
+}
